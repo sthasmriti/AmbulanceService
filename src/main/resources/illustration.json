@@ -1,0 +1,152 @@
+{
+    "isPayorDetailMandatory": false,
+    "uiModel": [
+      {
+        "status": "ready",
+        "output": 
+"{&quot;evaluateResponse&quot;:{&quot;configuredProduct&quot;:{&quot;productCode&quot;:&quot;NPL_EPP_QUO&quot;,&quot;productVersionCode&quot;:&quot;0.8&quot;},&quot;json:error&quot;:{&quot;type&quot;:{},&quot;origin&quot;:{}},&quot;requestedCalculations&quot;:[&quot;Illustration&quot;],&quot;contracts&quot;:[{&quot;identifier&quot;:&quot;ID42&quot;,&quot;output&quot;:{&quot;vectors&quot;:[{&quot;name&quot;:&quot;AgeInsured&quot;,&quot;v&quot;:&quot;3&quot;},{&quot;name&quot;:&quot;AgeOwner&quot;,&quot;v&quot;:&quot;29&quot;},{&quot;name&quot;:&quot;InsuredAmount&quot;,&quot;v&quot;:&quot;500000&quot;},{&quot;name&quot;:&quot;TaxAmount&quot;,&quot;v&quot;:&quot;17073&quot;},{&quot;name&quot;:&quot;Premium&quot;,&quot;v&quot;:&quot;41325&quot;}],&quot;quantityVectors&quot;:[],&quot;timeDependentVectors&quot;:[{&quot;name&quot;:&quot;CashValue&quot;,&quot;unitOfTime&quot;:&quot;Year&quot;,&quot;timeDependentValues&quot;:[{&quot;t&quot;:&quot;1&quot;,&quot;v&quot;:&quot;0&quot;},{&quot;t&quot;:&quot;2&quot;,&quot;v&quot;:&quot;0&quot;},{&quot;t&quot;:&quot;3&quot;,&quot;v&quot;:&quot;0&quot;},{&quot;t&quot;:&quot;4&quot;,&quot;v&quot;:&quot;146778&quot;},{&quot;t&quot;:&quot;5&quot;,&quot;v&quot;:&quot;194481&quot;},{&quot;t&quot;:&quot;6&quot;,&quot;v&quot;:&quot;247380&quot;},{&quot;t&quot;:&quot;7&quot;,&quot;v&quot;:&quot;305926&quot;},{&quot;t&quot;:&quot;8&quot;,&quot;v&quot;:&quot;370608&quot;},{&quot;t&quot;:&quot;9&quot;,&quot;v&quot;:&quot;441950&quot;},{&quot;t&quot;:&quot;10&quot;,&quot;v&quot;:&quot;520519&quot;},{&quot;t&quot;:&quot;11&quot;,&quot;v&quot;:&quot;606925&quot;},{&quot;t&quot;:&quot;12&quot;,&quot;v&quot;:&quot;701825&quot;},{&quot;t&quot;:&quot;13&quot;,&quot;v&quot;:&quot;805930&quot;},{&quot;t&quot;:&quot;14&quot;,&quot;v&quot;:&quot;920000&quot;}]},{&quot;name&quot;:&quot;DeathBenefit&quot;,&quot;unitOfTime&quot;:&quot;Year&quot;,&quot;timeDependentValues&quot;:[{&quot;t&quot;:&quot;1&quot;,&quot;v&quot;:&quot;500000&quot;},{&quot;t&quot;:&quot;2&quot;,&quot;v&quot;:&quot;500000&quot;},{&quot;t&quot;:&quot;3&quot;,&quot;v&quot;:&quot;500000&quot;},{&quot;t&quot;:&quot;4&quot;,&quot;v&quot;:&quot;500000&quot;},{&quot;t&quot;:&quot;5&quot;,&quot;v&quot;:&quot;500000&quot;},{&quot;t&quot;:&quot;6&quot;,&quot;v&quot;:&quot;500000&quot;},{&quot;t&quot;:&quot;7&quot;,&quot;v&quot;:&quot;500000&quot;},{&quot;t&quot;:&quot;8&quot;,&quot;v&quot;:&quot;500000&quot;},{&quot;t&quot;:&quot;9&quot;,&quot;v&quot;:&quot;500000&quot;},{&quot;t&quot;:&quot;10&quot;,&quot;v&quot;:&quot;500000&quot;},{&quot;t&quot;:&quot;11&quot;,&quot;v&quot;:&quot;500000&quot;},{&quot;t&quot;:&quot;12&quot;,&quot;v&quot;:&quot;500000&quot;},{&quot;t&quot;:&quot;13&quot;,&quot;v&quot;:&quot;500000&quot;},{&quot;t&quot;:&quot;14&quot;,&quot;v&quot;:&quot;500000&quot;}]},{&quot;name&quot;:&quot;GuaranteedAmount&quot;,&quot;unitOfTime&quot;:&quot;Year&quot;,&quot;timeDependentValues&quot;:[{&quot;t&quot;:&quot;1&quot;,&quot;v&quot;:&quot;0&quot;},{&quot;t&quot;:&quot;2&quot;,&quot;v&quot;:&quot;0&quot;},{&quot;t&quot;:&quot;3&quot;,&quot;v&quot;:&quot;0&quot;},{&quot;t&quot;:&quot;4&quot;,&quot;v&quot;:&quot;79771&quot;},{&quot;t&quot;:&quot;5&quot;,&quot;v&quot;:&quot;105696&quot;},{&quot;t&quot;:&quot;6&quot;,&quot;v&quot;:&quot;134446&quot;},{&quot;t&quot;:&quot;7&quot;,&quot;v&quot;:&quot;166264&quot;},{&quot;t&quot;:&quot;8&quot;,&quot;v&quot;:&quot;201417&quot;},{&quot;t&quot;:&quot;9&quot;,&quot;v&quot;:&quot;240190&quot;},{&quot;t&quot;:&quot;10&quot;,&quot;v&quot;:&quot;282891&quot;},{&quot;t&quot;:&quot;11&quot;,&quot;v&quot;:&quot;329850&quot;},{&quot;t&quot;:&quot;12&quot;,&quot;v&quot;:&quot;381427&quot;},{&quot;t&quot;:&quot;13&quot;,&quot;v&quot;:&quot;438006&quot;},{&quot;t&quot;:&quot;14&quot;,&quot;v&quot;:&quot;500000&quot;}]}],&quot;frequencyDependentVectors&quot;:[],&quot;vectorsInVectors&quot;:[],&quot;timeDependentVectorsInVectors&quot;:[{&quot;name&quot;:&quot;CashSurrenderValue&quot;,&quot;timeDependentVectors&quot;:[{&quot;name&quot;:&quot;SurrenderValue&quot;,&quot;unitOfTime&quot;:&quot;Year&quot;,&quot;timeDependentValues&quot;:[{&quot;t&quot;:&quot;1&quot;,&quot;v&quot;:&quot;0&quot;},{&quot;t&quot;:&quot;2&quot;,&quot;v&quot;:&quot;0&quot;},{&quot;t&quot;:&quot;3&quot;,&quot;v&quot;:&quot;0&quot;},{&quot;t&quot;:&quot;4&quot;,&quot;v&quot;:&quot;146778&quot;},{&quot;t&quot;:&quot;5&quot;,&quot;v&quot;:&quot;194481&quot;},{&quot;t&quot;:&quot;6&quot;,&quot;v&quot;:&quot;247380&quot;},{&quot;t&quot;:&quot;7&quot;,&quot;v&quot;:&quot;305926&quot;},{&quot;t&quot;:&quot;8&quot;,&quot;v&quot;:&quot;370608&quot;},{&quot;t&quot;:&quot;9&quot;,&quot;v&quot;:&quot;441950&quot;},{&quot;t&quot;:&quot;10&quot;,&quot;v&quot;:&quot;520519&quot;},{&quot;t&quot;:&quot;11&quot;,&quot;v&quot;:&quot;606925&quot;},{&quot;t&quot;:&quot;12&quot;,&quot;v&quot;:&quot;701825&quot;},{&quot;t&quot;:&quot;13&quot;,&quot;v&quot;:&quot;805930&quot;},{&quot;t&quot;:&quot;14&quot;,&quot;v&quot;:&quot;920000&quot;}]},{&quot;name&quot;:&quot;SurrenderValueFactor&quot;,&quot;unitOfTime&quot;:&quot;Year&quot;,&quot;timeDependentValues&quot;:[{&quot;t&quot;:&quot;1&quot;,&quot;v&quot;:&quot;442&quot;},{&quot;t&quot;:&quot;2&quot;,&quot;v&quot;:&quot;469&quot;},{&quot;t&quot;:&quot;3&quot;,&quot;v&quot;:&quot;497&quot;},{&quot;t&quot;:&quot;4&quot;,&quot;v&quot;:&quot;527&quot;},{&quot;t&quot;:&quot;5&quot;,&quot;v&quot;:&quot;558&quot;},{&quot;t&quot;:&quot;6&quot;,&quot;v&quot;:&quot;592&quot;},{&quot;t&quot;:&quot;7&quot;,&quot;v&quot;:&quot;627&quot;},{&quot;t&quot;:&quot;8&quot;,&quot;v&quot;:&quot;665&quot;},{&quot;t&quot;:&quot;9&quot;,&quot;v&quot;:&quot;705&quot;},{&quot;t&quot;:&quot;10&quot;,&quot;v&quot;:&quot;747&quot;},{&quot;t&quot;:&quot;11&quot;,&quot;v&quot;:&quot;792&quot;},{&quot;t&quot;:&quot;12&quot;,&quot;v&quot;:&quot;840&quot;},{&quot;t&quot;:&quot;13&quot;,&quot;v&quot;:&quot;890&quot;},{&quot;t&quot;:&quot;14&quot;,&quot;v&quot;:&quot;943&quot;}]}]}]},&quot;coverages&quot;:[{&quot;identifier&quot;:&quot;ID44&quot;,&quot;typeCode&quot;:&quot;EPP&quot;,&quot;output&quot;:{&quot;vectors&quot;:[{&quot;name&quot;:&quot;TotalAnnualisedPremium&quot;,&quot;v&quot;:&quot;41325&quot;}],&quot;quantityVectors&quot;:[],&quot;timeDependentVectors&quot;:[],&quot;frequencyDependentVectors&quot;:[{&quot;name&quot;:&quot;ModalPremiums&quot;,&quot;frequencyDependentValues&quot;:[{&quot;frequency&quot;:1,&quot;v&quot;:&quot;41325&quot;},{&quot;frequency&quot;:2,&quot;v&quot;:&quot;21489&quot;},{&quot;frequency&quot;:4,&quot;v&quot;:&quot;11158&quot;},{&quot;frequency&quot;:12,&quot;v&quot;:&quot;3719&quot;}]}],&quot;vectorsInVectors&quot;:[{&quot;name&quot;:&quot;BenefitAmount&quot;,&quot;vectors&quot;:[{&quot;name&quot;:&quot;1&percent;OfLossOfLifeCoverage&quot;,&quot;v&quot;:&quot;5000&quot;},{&quot;name&quot;:&quot;WaiverOfPremiumCoverage&quot;,&quot;v&quot;:&quot;41325&quot;},{&quot;name&quot;:&quot;Bonus&quot;,&quot;v&quot;:&quot;30000&quot;}]}],&quot;timeDependentVectorsInVectors&quot;:[]}}]}]}}",
+
+        "outputforComparision": "",
+        "category": "EducationProtectionPlan",
+        "plancode": "EducationProtectionPlan",
+        "pdfPath": 
+"EducationalProtectionPlanSI_7a44ea20-5100-11ed-86b1-416dd5c34741.pdf",
+        "type": "",
+        "childDetails": {
+          "firstName": "",
+          "lastName": "",
+          "gender": "Male",
+          "dateOfBirth": null,
+          "dobANB": "",
+          "ANByear": null,
+          "relation": ""
+        },
+        "basicPlanDetails": {
+          "planName": "Education Protection Plan (EPP)",
+          "sumAssured": "500000",
+          "term": "14 Years",
+          "plan": "Gold",
+          "paymentFrequency": "Annual",
+          "modalPremium": "41,325",
+          "annualPremium": "41,325",
+          "accidentalPremium": "",
+          "totalPremium": "41,325"
+        },
+        "riders": {
+          "EPR": {
+            "key": "EPR",
+            "selected": false,
+            "term": null,
+            "premium": "",
+            "sumAssured": "5000",
+            "name": "Education Protection Rider (EPR)",
+            "typeCode": "EPR",
+            "isRiderDisabled": false,
+            "disabled": false
+          },
+          "PA": {
+            "key": "PA",
+            "selected": false,
+            "term": null,
+            "premium": "",
+            "sumAssured": "",
+            "name": "Accidental Death, Dismemberment &amp; Permanent Total 
+Disability (PA)",
+            "typeCode": "PersonalAccident",
+            "identifier": "ID46",
+            "partyRoleIdentifier": "ID44",
+            "isRiderDisabled": false,
+            "disabled": true
+          },
+          "DPR": {
+            "key": "DPR",
+            "selected": false,
+            "term": null,
+            "premium": "",
+            "sumAssured": "",
+            "name": "Disability Protection Rider (DPR)",
+            "typeCode": "DisabilityProtection",
+            "identifier": "ID48",
+            "partyRoleIdentifier": "ID44",
+            "isRiderDisabled": false,
+            "disabled": true
+          },
+          "ADB": {
+            "key": "ADB",
+            "selected": false,
+            "term": null,
+            "premium": "",
+            "sumAssured": "",
+            "name": "Accidental Death Benefit (ADB)",
+            "typeCode": "ADB",
+            "isRiderDisabled": false,
+            "disabled": true
+          }
+        },
+        "nonforfeiture": {
+          "APL": {
+            "key": "APL",
+            "selected": true,
+            "isRiderDisabled": false,
+            "name": "Automatic Premium Loan"
+          },
+          "PU": {
+            "key": "PU",
+            "selected": false,
+            "isRiderDisabled": false,
+            "name": "Paid Up"
+          }
+        },
+        "isPayorDetailMandatory": false
+      },
+      {
+        "status": "ready",
+        "output": 
+"{&quot;evaluateResponse&quot;:{&quot;configuredProduct&quot;:{&quot;productCode&quot;:&quot;NPL_LifeCare_QUO&quot;,&quot;productVersionCode&quot;:&quot;0.4&quot;},&quot;json:error&quot;:{&quot;type&quot;:{},&quot;origin&quot;:{}},&quot;requestedCalculations&quot;:[&quot;Premium&quot;],&quot;contracts&quot;:[{&quot;identifier&quot;:&quot;CT0&quot;,&quot;output&quot;:{},&quot;coverages&quot;:[{&quot;identifier&quot;:&quot;CV1&quot;,&quot;typeCode&quot;:&quot;LossOfLife&quot;,&quot;output&quot;:{&quot;vectors&quot;:[],&quot;quantityVectors&quot;:[],&quot;timeDependentVectors&quot;:[],&quot;frequencyDependentVectors&quot;:[{&quot;name&quot;:&quot;ModalPremiums&quot;,&quot;frequencyDependentValues&quot;:[{&quot;frequency&quot;:1,&quot;v&quot;:&quot;1715&quot;},{&quot;frequency&quot;:2,&quot;v&quot;:&quot;892&quot;},{&quot;frequency&quot;:4,&quot;v&quot;:&quot;463&quot;},{&quot;frequency&quot;:12,&quot;v&quot;:&quot;154&quot;}]}],&quot;vectorsInVectors&quot;:[],&quot;timeDependentVectorsInVectors&quot;:[]}}]}]}}",
+        "outputforComparision": "",
+        "category": "LifeCare",
+        "plancode": "LifeCare",
+        "pdfPath": "",
+        "type": "",
+        "basicPlanDetails": {
+          "planName": "LifeCare",
+          "sumAssured": "500000",
+          "term": "10 Yrs.",
+          "paymentFrequency": "Semi Annual",
+          "modalPremium": "892",
+          "totalPremium": "892"
+        },
+        "riders": {
+          "criticalIllnessRiderGeneral": {
+            "key": "criticalIllnessRiderGeneral",
+            "selected": false,
+            "term": null,
+            "premium": "",
+            "sumAssured": "",
+            "name": "LifeCare Brave",
+            "typeCode": "GeneralCI",
+            "isRiderShown": true,
+            "isRiderDisabled": false,
+            "disabled": true
+          },
+          "criticalIllnessRiderFemale": {
+            "key": "criticalIllnessRiderGeneral",
+            "selected": false,
+            "term": null,
+            "premium": "",
+            "sumAssured": "",
+            "name": "LifeCare Beautiful",
+            "typeCode": "FemaleCI",
+            "isRiderShown": false,
+            "isRiderDisabled": false,
+            "disabled": true
+          }
+        },
+        "isPayorDetailMandatory": false
+      }
+    ],
+    "selectedProduct": [
+      "EducationProtectionPlan",
+      "LifeCare"
+    ]
+  }
