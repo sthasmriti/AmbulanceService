@@ -1,10 +1,14 @@
 package com.aggregrator.ambulanceservice.service;
 
+import com.aggregrator.ambulanceservice.model.Address;
 import com.aggregrator.ambulanceservice.model.Ambulance;
+import com.aggregrator.ambulanceservice.model.Rating;
 import com.aggregrator.ambulanceservice.model.dto.AddressDTO;
 import com.aggregrator.ambulanceservice.model.dto.AmbulanceDTO;
 import com.aggregrator.ambulanceservice.exception.AmbulanceNotFoundException;
+import com.aggregrator.ambulanceservice.model.dto.RatingDTO;
 import com.aggregrator.ambulanceservice.repository.AmbulanceRepository;
+import com.aggregrator.ambulanceservice.repository.RatingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
@@ -17,6 +21,8 @@ public class AmbulanceService {
 
     @Autowired
     AmbulanceRepository ambulanceRepository;
+    @Autowired
+    RatingRepository ratingRepository;
 
     public Iterable<Ambulance>getAmbulanceList(){
         return ambulanceRepository.findAll();
@@ -36,8 +42,8 @@ public class AmbulanceService {
     public Ambulance createAmbulance(AmbulanceDTO ambulanceDTO){
 
         AddressDTO addressDTO = ambulanceDTO.getAddress();
-//        Address address = new Address(addressDTO.getProvince(),addressDTO.getCity(),addressDTO.getAddress());
-        Ambulance ambulance = new Ambulance(ambulanceDTO.getName(),ambulanceDTO.getLat(),ambulanceDTO.getLon(),ambulanceDTO.isOpened(),LocalDateTime.now());
+        Address address = new Address(addressDTO.getProvince(),addressDTO.getCity(),addressDTO.getAddress());
+        Ambulance ambulance = new Ambulance(ambulanceDTO.getName(),ambulanceDTO.getLat(),ambulanceDTO.getLon(),ambulanceDTO.isOpened(),LocalDateTime.now(),address,ambulanceDTO.getPhones());
         return ambulanceRepository.save(ambulance);
 
     }
@@ -73,7 +79,14 @@ public class AmbulanceService {
         }
 
 
+    }
 
+    public Rating addRating(RatingDTO ratingDTO, long ambulanceId){
+
+        Ambulance ambulance = ambulanceRepository.findById(ambulanceId).get();
+
+        Rating rating = new Rating(ambulance, ratingDTO.getValue());
+        return ratingRepository.save(rating);
     }
 
 }

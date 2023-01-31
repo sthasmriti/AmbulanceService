@@ -25,4 +25,6 @@ public class AmbulanceDTO {
     private boolean isOpened;
 
 
+
+
 }

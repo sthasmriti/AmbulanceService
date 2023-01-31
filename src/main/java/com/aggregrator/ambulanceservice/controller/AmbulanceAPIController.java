@@ -1,7 +1,9 @@
 package com.aggregrator.ambulanceservice.controller;
 
 import com.aggregrator.ambulanceservice.model.Ambulance;
+import com.aggregrator.ambulanceservice.model.Rating;
 import com.aggregrator.ambulanceservice.model.dto.AmbulanceDTO;
+import com.aggregrator.ambulanceservice.model.dto.RatingDTO;
 import com.aggregrator.ambulanceservice.service.AmbulanceService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -11,8 +13,11 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import javax.print.attribute.standard.Media;
 
 @RestController
 @RequestMapping(value = "/api/v1")
@@ -61,6 +66,12 @@ public class AmbulanceAPIController {
        Ambulance createdAmbulance = ambulanceService.createAmbulance(ambulanceDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(createdAmbulance);
 
+    }
+    @PutMapping(value = "/ambulance/ratings/{id}")
+    public ResponseEntity<Rating> provideRating(@PathVariable(value = "id") Long Id,
+                                                @RequestBody RatingDTO ratingDTO){
+        Rating ratings = ambulanceService.addRating(ratingDTO,Id);
+        return ResponseEntity.status(HttpStatus.OK).body(ratings);
     }
 
     @PutMapping(value = "/ambulance/{id}")
